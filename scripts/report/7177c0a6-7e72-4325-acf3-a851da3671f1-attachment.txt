@@ -1,0 +1,5 @@
+INFO     root:base.py:27 正在查找元素:('css selector', "[placeholder='请输入手机号']")
+INFO     root:base.py:27 正在查找元素:('css selector', "[placeholder='验证码']")
+INFO     root:base.py:27 正在查找元素:('css selector', '.el-button--primary')
+INFO     root:base.py:27 正在查找元素:('xpath', "//span[text()='内容管理']/..")
+INFO     root:base.py:27 正在查找元素:('xpath', "//*[contains(text(),'发布文章')]")

@@ -1,0 +1,52 @@
+1:测试环境搭建
+python  pycharm pytest selenium  appium  allure  java  jenkins
+
+2:项目目录搭建
+base：所有page页面基类，page页面公共方法目录
+page：页面对象目录
+scripts：测试脚本
+image：失败图片存储目录
+report：测试报告存储目录
+data：测试数据存储目录
+log：脚本运行日志
+tools：功能类
+
+
+
+3：测试账号
+自媒体
+http://ttmp.research.itcast.cn/#/index
+13812345678
+246810
+
+后端管理web端
+
+http://ttmis.research.itcast.cn/#/
+testid testpwd123RR
+
+4：
+pip install allure-pytest 在任何环境中运行测试
+
+5：pytest.ini  pytest 配置文件
+
+6: assert
+   @pytest.mark.parametrize("username, code, expect",readyaml("mp_login.yml"))
+   yaml.safe_load(f).values()
+
+7:日志组件
+    格式器
+    处理器
+    日志器
+    过滤器
+         日志器+处理器
+         处理器+格式器
+            th = logging.handlers.TimedRotatingFileHandler(filename=filePath,
+                                                           when="midnight",
+                                                           interval=1,
+                                                           backupCount=3,
+                                                           encoding="utf-8")
+            fm = logging.Formatter(fmt)
+            # 将格式器添加到处理器中
+            th.setFormatter(fm)
+            # 将处理器添加到日志器
+            cls.__logger.addHandler(th)

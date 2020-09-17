@@ -1,0 +1,2 @@
+[32mINFO    [0m root:base.py:27 正在查找元素:('css selector', "[name='username']")
+[32mINFO    [0m root:base.py:27 正在查找元素:('css selector', "[placeholder='验证码']")
